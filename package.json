@@ -1,0 +1,40 @@
+{
+  "name": "4devs",
+  "version": "1.0.0",
+  "description": "A package from npm that offers the services of the site 4devs.com.br",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/Theryston/4devs.git",
+  "author": "Theryston Santos <funktodo2@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "husky": "^7.0.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "git-cz": "^4.8.0",
+    "jest": "^27.5.1",
+    "pinst": "^3.0.0",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^3.14.0",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "test": "jest --watch",
+    "build": "tsc"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
