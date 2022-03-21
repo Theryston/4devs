@@ -1,6 +1,6 @@
 {
   "name": "4devs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A package from npm that offers the services of the site 4devs.com.br",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
