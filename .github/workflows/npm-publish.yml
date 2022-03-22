@@ -19,6 +19,6 @@ jobs:
           yarn
           yarn build
       - name: Publish package on NPM 📦
-        run: npm publish --tag ${{ github.ref }}
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
