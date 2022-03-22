@@ -1,4 +1,4 @@
 import { GeneratePerson } from './generate/GeneratePerson';
-import { ValidatePerson } from './validate/ValidatePerson';
+import { CPF } from './CPF';
 
-export { GeneratePerson, ValidatePerson };
+export { GeneratePerson, CPF };
