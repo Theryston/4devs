@@ -1,4 +1,4 @@
-import { Certificates } from '../lib/modules/Certificates';
+import { Certificates } from '../lib/index';
 
 const certificateMock = {
   certificate: '18734801552022427855667824940025',

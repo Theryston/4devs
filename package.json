@@ -8,6 +8,11 @@
   "author": "Theryston Santos <funktodo2@gmail.com>",
   "license": "MIT",
   "private": false,
+  "files": [
+    "dist/",
+    "package.json",
+    "README.md"
+  ],
   "dependencies": {
     "axios": "^0.26.1",
     "form-data": "^4.0.0"
