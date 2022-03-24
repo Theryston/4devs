@@ -1,4 +1,4 @@
-import { GeneratePerson } from './generate/GeneratePerson';
+import { Certificates } from './modules/Certificates';
 import { CPF } from './modules/CPF';
 
-export { GeneratePerson, CPF };
+export { Certificates, CPF };
