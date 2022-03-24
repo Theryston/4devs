@@ -1,6 +1,6 @@
 {
   "name": "4devs",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "description": "npm package that generates and validates: Birth Certificate, CNH, Bank Account, CPF, Resume, Nicks, PIS/PASEP, CNPJ, CEP, RG, Voter Title, Credit Card, documents of people, Image, Password and much more...",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
