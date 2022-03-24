@@ -6,5 +6,6 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/github",
     "@semantic-release/npm"
-  ]
+  ],
+  "repositoryUrl": "https://github.com/Theryston/4devs.git"
 }
