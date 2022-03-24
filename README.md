@@ -4,7 +4,7 @@
 
 # Quick Start
 
-npm package that generates and validates: Birth Certificate, CNH, Bank Account, CPF, Resume, Nicks, PIS/PASEP, CNPJ, CEP, RG, Voter Title, Credit Card, documents of people, Image, Password and much more...
+npm package that generates and validates: Birth Certificate, CNH, Bank Account, CPF, Resume, Nicks, PIS/PASEP, CNPJ, CEP, RG, Voter Title, Credit Card, documents of people, Image and much more...
 
 ```ts
 import { CPF } from '4devs';
