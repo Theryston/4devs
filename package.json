@@ -44,7 +44,8 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "release": "yarn semantic-release"
+    "release": "yarn semantic-release",
+    "example": "node examples/index.js"
   },
   "config": {
     "commitizen": {
