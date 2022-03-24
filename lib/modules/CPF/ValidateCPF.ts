@@ -1,5 +1,5 @@
-import { RequestUtil } from '../utils/RequestUtil';
-import { ICPFValid } from '../interfaces/CPF';
+import { RequestUtil } from '../../utils/RequestUtil';
+import { ICPFValid } from '../../interfaces/ICPF';
 
 export class ValidateCPF {
   requestUtil = new RequestUtil();

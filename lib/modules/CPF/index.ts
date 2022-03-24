@@ -1,8 +1,8 @@
 import { ValidateCPF } from './ValidateCPF';
 import { GenerateCPF } from './GenerateCPF';
 
-import { ICPFValid } from '../interfaces/CPF';
-import { ICPFGenerated } from '../interfaces/CPF';
+import { ICPFValid } from '../../interfaces/ICPF';
+import { ICPFGenerated } from '../../interfaces/ICPF';
 
 export class CPF {
   public static async validate({ cpf }: { cpf: string }): Promise<ICPFValid> {
