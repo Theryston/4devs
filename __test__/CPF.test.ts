@@ -11,6 +11,10 @@ const cpfMock: ICPF = {
 };
 
 describe('CPF lib', () => {
+  it('should create an instance', () => {
+    expect(new CPF()).toBeTruthy();
+  });
+
   it('should be valid CPF', async () => {
     const CPFIsValid = await CPF.validate({ cpf: cpfMock.cpf });
 
@@ -25,6 +29,12 @@ describe('CPF lib', () => {
 
   it('should generate a CPF without dots', async () => {
     const { cpf } = await CPF.generate({ isWithDots: false });
+
+    expect(cpf).toHaveLength(11);
+  });
+
+  it('should generate a CPF with state', async () => {
+    const { cpf } = await CPF.generate({ stateCode: 'BA' });
 
     expect(cpf).toHaveLength(11);
   });

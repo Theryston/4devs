@@ -23,6 +23,7 @@ export class RequestUtil {
     }
     const response = await axios.post(`${this.base4DevsUrl}${path}`, formData, {
       headers: formData.getHeaders(),
+      transformResponse: r => r,
     });
     return response;
   }

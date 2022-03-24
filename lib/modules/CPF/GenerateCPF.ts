@@ -1,5 +1,5 @@
-import { RequestUtil } from '../utils/RequestUtil';
-import { ICPFGenerated } from '../interfaces/CPF';
+import { RequestUtil } from '../../utils/RequestUtil';
+import { ICPFGenerated } from '../../interfaces/ICPF';
 
 export class GenerateCPF {
   requestUtil = new RequestUtil();
@@ -20,7 +20,7 @@ export class GenerateCPF {
     });
 
     return {
-      cpf: cpf.toString(),
+      cpf: cpf,
     };
   }
 }

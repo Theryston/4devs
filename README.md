@@ -30,7 +30,8 @@ npm install --save 4devs
 
 # Navigation
 
-[CPF](#cpf)
+- [CPF](#cpf)
+- [Certificates](#certificates)
 
 # Docs:
 
@@ -79,6 +80,57 @@ return:
 ```ts
 {
   cpf: string;
+}
+```
+
+## Certificates:
+
+Certificates is one of the classes that 4devs has, this class is able to generate and validate a certificates based on the services on the pages [https://www.4devs.com.br/validador_certidoes](https://www.4devs.com.br/validador_certidoes) and [https://www.4devs.com.br/gerador_numero_certidoes](https://www.4devs.com.br/gerador_numero_certidoes)
+
+### validate a Certificates
+
+```ts
+import { Certificates } from '4devs';
+
+const { isValid } = await Certificates.validate({
+  certificate: '107211 01 55 2018 1 07592 378 3808990-80',
+});
+```
+
+parameters:
+
+- `certificate` (required) the certificate you want to validate
+
+return:
+
+```ts
+{
+  isValid: boolean;
+}
+```
+
+### generate a new Certificate
+
+```ts
+import { Certificates } from '4devs';
+
+const { certificate } = await Certificates.generate({
+  isWithDots: true,
+  type: 'BIRTH',
+});
+```
+
+parameters:
+
+- `isWithDots` (optional) if true the certificate will be generated with dots example: 107211 01 55 2018 1 07592 378 3808990-80 if not generated without example: 21931801552017107907909207153815
+
+- `type` (optional) the certificate type, can be: `'BIRTH' | 'WEDDING' | 'RELIGIOUS_MARRIAGE' | 'DEATH'`
+
+return:
+
+```ts
+{
+  certificate: string;
 }
 ```
 
