@@ -1,7 +1,7 @@
 {
   "name": "4devs",
   "version": "1.2.0",
-  "description": "npm package that generates and validates: Birth Certificate, CNH, Bank Account, CPF, Resume, Nicks, PIS/PASEP, CNPJ, CEP, RG, Voter Title, Credit Card, documents of people, Image and much more...",
+  "description": "Validate and generate various data 🚀✅",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/Theryston/4devs.git",
