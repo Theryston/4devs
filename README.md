@@ -134,6 +134,48 @@ return:
 }
 ```
 
+## CNH:
+
+CNH is one of the classes that 4devs has, this class is able to generate and validate a CNH based on the services on the pages [https://www.4devs.com.br/validador_cnh](https://www.4devs.com.br/validador_cnh) and [https://www.4devs.com.br/gerador_de_cnh](https://www.4devs.com.br/gerador_de_cnh)
+
+### validate a CNH
+
+```ts
+import { CNH } from '4devs';
+
+const { isValid } = await CNH.validate({
+  cnh: '79973493843',
+});
+```
+
+parameters:
+
+- `cnh` (required) the cnh you want to validate
+
+return:
+
+```ts
+{
+  isValid: boolean;
+}
+```
+
+### generate a new CNH
+
+```ts
+import { CNH } from '4devs';
+
+const { cnh } = await CNH.generate();
+```
+
+return:
+
+```ts
+{
+  cnh: string;
+}
+```
+
 # Footer:
 
 This package is created using the website [https://www.4devs.com.br](https://www.4devs.com.br/). but the site has no responsibility for this content it was made in an open source way and without contacting the site.
