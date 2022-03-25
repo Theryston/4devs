@@ -13,7 +13,7 @@ describe('CNH', () => {
   it('should to generate a new CNH', async () => {
     const { cnh } = await CNH.generate();
     expect(cnh).toBeTruthy();
-    expect(cnh).toBeGreaterThan(11);
+    expect(cnh).toBeGreaterThan(10);
   });
 
   it('should validate the CNH', async () => {
