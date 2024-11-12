@@ -31,6 +31,7 @@ npm install --save 4devs
 # Navigation
 
 - [CPF](#cpf)
+- [RG](#rg)
 - [Certificates](#certificates)
 
 # Docs:
