@@ -31,6 +31,7 @@ npm install --save 4devs
 # Navigation
 
 - [CPF](#cpf)
+- [RG](#rg)
 - [Certificates](#certificates)
 
 # Docs:
@@ -61,25 +62,49 @@ return:
 }
 ```
 
-### generate a new CPF
+## RG:
+
+RG is one of the classes that 4devs has, this class is able to generate and validate a rg based on the services on the pages [https://www.4devs.com.br/gerador_de_cpf](https://www.4devs.com.br/gerador_de_rg) and [https://www.4devs.com.br/validador_rg](https://www.4devs.com.br/validador_rg)
+
+### validate a RG
 
 ```ts
-import { CPF } from '4devs';
+import { RG } from '4devs';
 
-const { cpf } = await CPF.generate({ isWithDots: true, stateCode: 'BA' });
+const { isValid } = await RG.validate({ rg: '30.737.817-2' });
 ```
 
 parameters:
 
-- `isWithDots` (optional) if true the CPF will be generated with dots example: 218.61.715-34 if not generated without example: 60778779564
-
-- `stateCode` (optional) code of the state where the CPF belongs, example: "BA" or "SP"
+- `rg` (required) the RG you want to validate
 
 return:
 
 ```ts
 {
-  cpf: string;
+  isValid: boolean;
+}
+```
+
+### generate a new RG
+
+```ts
+import { RG } from '4devs';
+
+const { rg } = await RG.generate({ isWithDots: true, stateCode: 'BA' });
+```
+
+parameters:
+
+- `isWithDots` (optional) if true the RG will be generated with dots example: 30.737.817-2 if not generated without example: 60.778.777-0
+
+- `stateCode` (optional) code of the state where the RG belongs, example: "BA" or "SP"
+
+return:
+
+```ts
+{
+  rg: string;
 }
 ```
 
