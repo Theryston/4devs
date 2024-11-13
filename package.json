@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/Theryston/4devs.git",
-  "author": "Theryston Santos <funktodo2@gmail.com>",
+  "author": "Theryston Santos <devtheryston@gmail.com>",
   "license": "MIT",
   "private": false,
   "files": [

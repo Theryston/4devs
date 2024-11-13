@@ -16,6 +16,12 @@ await CPF.validate({ cpf: '999.999.999-99' }); // false
 
 ## Installation
 
+pnpm
+
+```shell
+pnpm add 4devs
+```
+
 yarn
 
 ```shell
@@ -96,7 +102,7 @@ const { rg } = await RG.generate({ isWithDots: true, stateCode: 'BA' });
 
 parameters:
 
-- `isWithDots` (optional) if true the RG will be generated with dots example: 30.737.817-2 if not generated without example: 60.778.777-0
+- `isWithDots` (optional) if true the RG will be generated with dots example: 30.737.817-2 if not generated without example: 307378172
 
 - `stateCode` (optional) code of the state where the RG belongs, example: "BA" or "SP"
 
